@@ -42,20 +42,6 @@ router.patch('/parachain/:id', async (req, res) => {
             return res.status(404).send()
         }
 
-        // updates.forEach(update => {
-        //     if (update == 'tags') {
-        //         let tags = [];
-        //         req.body[update].forEach(async tag => {
-        //             const found = await Tag.findOne({name: tag})
-
-        //             if (found) {
-        //                 tags.concat(found._id)
-        //             }
-        //         })
-        //         parachain[update].concat(tags)
-        //     }
-        //     else parachain[update] = req.body[update]
-        // })
         updates.forEach(update => {
             parachain[update] = req.body[update]
         })
