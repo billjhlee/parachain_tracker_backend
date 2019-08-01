@@ -6,7 +6,8 @@ Currently Done:
   1. User
   2. Parachain
   3. Tag
-
+  + Basic get, post, patch requests
+  
 - Login Authentication using JSON Webtokens
 
 To be done:
